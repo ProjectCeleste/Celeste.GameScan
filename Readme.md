@@ -21,4 +21,4 @@ Celeste.GameScan.exe --game-dir D:\AgeOfEmpiresOnline
 ```
 
 # Building and running
-To build and run this you must have the .NET Core 3.1 SDK installed. To compile the program, run `dotnet build` or compile and run it directly with`dotnet run --project .\Celeste.GameScan\Celeste.GameScan.csproj -- --game-dir "D:\Test"` 
+To build and run this you must have the .NET Core 3.1 SDK installed. To compile the program, run `dotnet build` or compile and run it directly with `dotnet run -- --game-dir "D:\Test"` 
