@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Celeste.GameScannerCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "--game-dir D:\\Test --is-steam"
+    }
+  }
+}
