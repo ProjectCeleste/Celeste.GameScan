@@ -45,12 +45,12 @@ namespace Celeste.GameScan
 
                 if (!await gameScannner.ScanAndRepair(progress, subProgress))
                 {
-                    Console.WriteLine("All files ");
+                    Console.WriteLine("Scan completed: No game files were updated, everything up to date");
                     return 0;
                 }
                 else
                 {
-                    Console.WriteLine("Gamescan has completed");
+                    Console.WriteLine("Gamescan has completed and updated game files");
                     return 0;
                 }
             });
