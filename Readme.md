@@ -9,7 +9,7 @@ Usage:
 Options:
   --game-dir <game-dir> (REQUIRED)    Path to the directory where Spartan.exe is located
   --is-steam                          Enabled for installations that are launchable through Steam
-  --verbose                           Write more detailed log about progress
+  --verbose-mode                      Write more detailed log about progress [default: False]
   --version                           Show version information
   -?, -h, --help                      Show help and usage information
 ```

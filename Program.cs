@@ -18,10 +18,11 @@ namespace Celeste.GameScan
                     description: "Path to the directory where Spartan.exe is located") { IsRequired = true },
                 new Option<bool>(
                     "--is-steam",
-                    "Enabled for installations that are launchable through Steam"),
+                    description: "Enabled for installations that are launchable through Steam"),
                 new Option<bool>(
-                    "--verbose",
-                    "Write more detailed log about progress"),
+                    "--verbose-mode",
+                    getDefaultValue: () => false,
+                    description: "Write more detailed log about progress"),
             };
 
             rootCommand.Handler = CommandHandler.Create<string, bool, bool>(async(gameDir, isSteam, verboseMode) =>
@@ -37,7 +38,7 @@ namespace Celeste.GameScan
                 var progress = new Progress<ScanProgress>();
                 var subProgress = new Progress<ScanSubProgress>();
 
-                if (!verboseMode)
+                if (verboseMode)
                 {
                     subProgress.ProgressChanged += SubProgress_ProgressChanged;
                     progress.ProgressChanged += Progress_ProgressChanged;

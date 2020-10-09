@@ -2,7 +2,7 @@
   "profiles": {
     "Celeste.GameScannerCLI": {
       "commandName": "Project",
-      "commandLineArgs": "--game-dir D:\\Test --is-steam"
+      "commandLineArgs": "--game-dir D:\\Test --is-steam --verbose-mode"
     }
   }
 }
